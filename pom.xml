@@ -4,8 +4,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>${the.project.groupId}</groupId>
-	<artifactId>${the.project.artifactId}</artifactId>
+	<groupId>test.docker</groupId>
+	<artifactId>spring-boot-docker</artifactId>
 	<version>0.1.0</version>
 	<packaging>jar</packaging>
 	<name>Spring Boot Docker</name>
@@ -19,9 +19,6 @@
 	</parent>
 
 	<properties>
-		<the.project.groupId>test.docker</the.project.groupId>
-		<the.project.artifactId>spring-boot-docker</the.project.artifactId>
-
 		<docker.image.prefix>springio</docker.image.prefix>
 		<java.version>1.8</java.version>
 		<maven.dependency.plugin>3.1.2</maven.dependency.plugin>
@@ -47,8 +44,8 @@
 						<configuration>
 							<artifactItems>
 								<artifactItem>
-									<groupId>${the.project.groupId}</groupId>
-									<artifactId>${the.project.artifactId}</artifactId>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${project.artifactId}</artifactId>
 									<version>${project.version}</version>
 									<type>jar</type>
 									<outputDirectory>${project.build.directory}/dependency</outputDirectory>
